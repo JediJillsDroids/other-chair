@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111317">
+  <meta name="description" content="The Other Chair — I'm going anyway.">
+  <title>The Other Chair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="brand" data-route="home" aria-label="Home">
+        <span class="brand-mark">OC</span>
+        <span class="brand-copy"><strong>The Other Chair</strong><small>I'm going anyway.</small></span>
+      </button>
+      <div class="top-actions">
+        <button id="languageToggle" class="ghost-button" type="button">한국어</button>
+        <span id="backendStatus" class="status-pill">Connecting…</span>
+      </div>
+    </header>
+    <main id="view" class="view" tabindex="-1"></main>
+    <nav class="bottom-nav" aria-label="Primary navigation">
+      <button data-route="home">Home</button><button data-route="humans">Humans</button><button data-route="games">Games</button><button data-route="rules">Rules</button><button data-route="about">About</button>
+    </nav>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
